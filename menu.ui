@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QMainWindow" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main Menu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>-90</x>
+      <y>30</y>
+      <width>661</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>60</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;GAME OF LIFE&lt;span style=&quot; vertical-align:sub;&quot;&gt;z&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>140</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>PLAY</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rulesButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>210</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RULES</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quitButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>270</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>QUIT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rulesText">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>60</y>
+      <width>541</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; text-decoration: underline;&quot;&gt;RULES&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Watch as grid cells form life and societies!!&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Blue&lt;/span&gt; cells are Alive! &lt;span style=&quot; font-style:italic;&quot;&gt;Left-click&lt;/span&gt; a cell to turn it blue.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;White&lt;/span&gt; cells are Dead.. &lt;span style=&quot; font-style:italic;&quot;&gt;Right-click&lt;/span&gt; a cell to turn it white.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;UNDERPOPULATION&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Any live cell with fewer than 2 live neighbors &lt;span style=&quot; font-style:italic;&quot;&gt;DIES&lt;/span&gt; !&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;OVERPOPULATION&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Any live cell with more than 3 live neighbors &lt;span style=&quot; font-style:italic;&quot;&gt;DIES&lt;/span&gt; !&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;STABILITY&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Any live cell with 2 or 3 live neighbors &lt;span style=&quot; font-style:italic;&quot;&gt;STAYS ALIVE&lt;/span&gt; !&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;REPRODUCTION&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Any dead cell with exactly 3 live neighbors becomes &lt;span style=&quot; font-style:italic;&quot;&gt;ALIVE&lt;/span&gt; !&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ZOMBIES&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Dead cells have a small chance (1%) to become zombies!&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Every turn there is a small (10%) chance that they die, but..&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;if a zombie survives 5 turns it becomes &lt;span style=&quot; font-style:italic;&quot;&gt;ALIVE&lt;/span&gt; ! &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;! HAVE FUN !&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGAME">
+    <property name="title">
+     <string>GAME</string>
+    </property>
+   </widget>
+   <addaction name="menuGAME"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
